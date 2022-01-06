@@ -13,7 +13,7 @@ You can compile the script into a binary if you want. I won't provide any pre-co
 # How to use
 ## Preparations
 First, find the file `filecache.bin` located in the directory mentioned above.  
-After that, place it in the same directory as the script.
+After that, copy the file path.
 ## Running
-Now run `tbg_cacheripper.py`. It will first check for `filecache.bin` in the current directory. If it finds it, it will start extracting files.  
+Now open a terminal and run `tbg_cacheripper.py <filecache-path>`. It will first check if the file exists, and validate the file. Then it will start extracting.    
 The process shouldn't take long, since all the files are text files. After it's done, the files are extracted to the `cacheripper_ripped` folder.
