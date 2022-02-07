@@ -17,7 +17,7 @@ tbg_cacheripper.py [-h, --help] [-e, --export DIRECTORY] [-d, --disablelog] [-o,
 ## Parameters
 | Parameter | Description |
 |--|--|
-| `filecache_path` | Path to `filecache.bin`. Checks will be in place to verify the file cache. |
+| `filecache_path` | Path to the file cache for extracting. Checks will be in place to verify the file cache. |
 | `-h, --help` | Show the help message. |
 | `-e, --export DIRECTORY` | Export directory for extracting file caches. |
 | `-d, --disablelog` | Skips creating `cacheripper.log` in the export directory. |
