@@ -19,16 +19,16 @@ tbg_cacheripper.py [-h, --help] [-e, --export DIRECTORY] [-d, --disablelog] [-o,
 |--|--|
 | `filecache_path` | Path to the file cache for extracting. Checks will be in place to verify the file cache. |
 | `-h, --help` | Show the help message. |
-| `-e, --export DIRECTORY` | Export directory for extracting file caches. |
+| `-e, --export DIRECTORY` | Export directory for extracting file caches. The program cannot use file paths with drive letters yet. |
 | `-d, --disablelog` | Skips creating `cacheripper.log` in the export directory. |
 | `-o, --overwrite` | Overwrites the export directory even if it exists. |
 | `-n, --newexport` | Prompts you to create a new export directory if the old one exists. |
 | `-a, --autoexit` | Skips the 2 Enter presses required to exit the program. |
 
 # Examples
-To scan and extract files from `filecache.bin` in the directory `C:\Program Files (x86)\Steam\steamapps\common\The Beginner's Guide\beginnersguide`, type:
+To scan and extract files from `filecache.bin` in the directory `The Beginner's Guide\beginnersguide`, type:
 ```
-python tbg_cacheripper.py "C:\Program Files (x86)\Steam\steamapps\common\The Beginner's Guide\beginnersguide\filecache.bin"
+python tbg_cacheripper.py "The Beginner's Guide\beginnersguide\filecache.bin"
 ```
 
 To scan and extract files from `cache.cache` in the program's starting directory, type:
@@ -42,3 +42,4 @@ Here's a list of my planned features for the next update:
 - Add more checks for scanning file caches
 - Without the auto-exit parameter, 10 Enter presses are required
 - Make a "no UI" mode to avoid flashes
+- Make the program use file paths with drive letters
