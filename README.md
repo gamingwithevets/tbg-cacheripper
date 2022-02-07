@@ -10,10 +10,35 @@ And yes, I made it myself since I don't see any on the Internet. I'm wondering i
 You just need Python...  
 You can compile the script into a binary if you want. I won't provide any pre-compiled ones.
 
-# How to use
-## Preparations
-First, find the file `filecache.bin` located in the directory mentioned above.  
-After that, copy the file path.
-## Running
-Now open a terminal and run `tbg_cacheripper.py <filecache-path>`. It will first check if the file exists, and validate the file. Then it will start extracting.    
-The process shouldn't take long, since all the files are text files. After it's done, the files are extracted to the `cacheripper_ripped` folder.
+# Usage
+```
+tbg_cacheripper.py [-h, --help] [-e, --export DIRECTORY] [-d, --disablelog] [-o, --overwrite] [-n, --newexport] [-a, --autoexit] filecache_path
+```
+## Parameters
+| Parameter | Description |
+|--|--|
+| `filecache_path` | Path to `filecache.bin`. Checks will be in place to verify the file cache. |
+| `-h, --help` | Show the help message. |
+| `-e, --export DIRECTORY` | Export directory for extracting file caches. |
+| `-d, --disablelog` | Skips creating `cacheripper.log` in the export directory. |
+| `-o, --overwrite` | Overwrites the export directory even if it exists. |
+| `-n, --newexport` | Prompts you to create a new export directory if the old one exists. |
+| `-a, --autoexit` | Skips the 2 Enter presses required to exit the program. |
+
+# Examples
+To scan and extract files from `filecache.bin` in the directory `C:\Program Files (x86)\Steam\steamapps\common\The Beginner's Guide\beginnersguide`, type:
+```
+python tbg_cacheripper.py "C:\Program Files (x86)\Steam\steamapps\common\The Beginner's Guide\beginnersguide\filecache.bin"
+```
+
+To scan and extract files from `cache.cache` in the program's starting directory, type:
+```
+python tbg_cacheripper.py cache.cache
+```
+
+# Planned Features
+Here's a list of my planned features for the next update:
+- Scan the file cache only
+- Add more checks for scanning file caches
+- Without the auto-exit parameter, 10 Enter presses are required
+- Make a "no UI" mode to avoid flashes
