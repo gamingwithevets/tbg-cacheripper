@@ -1,6 +1,7 @@
 # Basic info
 CACHERIPPER is a file cache ripper for the game The Beginner's Guide.  
-It is **only** designed to extract files from `filecache.bin`, located in `game-path/beginnersguide[_<language>]/`.
+It is **only** designed to extract files from `filecache.bin`, located in `game-path/beginnersguide[_<language>]/`.  
+It can be used with the [CACHEPACKER](https://github.com/gamingwithevets/tbg-cachepacker) tool.
 
 And yes, I made it myself since I don't see any on the Internet. I'm wondering if this repo will become popular.
 
